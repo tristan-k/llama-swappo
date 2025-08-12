@@ -69,7 +69,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.TAP_REPO_PAT }}
-          repository: mostlygeek/homebrew-llama-swap
+          repository: tristan-k/homebrew-llama-swap
           event-type: new-release
           client-payload: |
             {
