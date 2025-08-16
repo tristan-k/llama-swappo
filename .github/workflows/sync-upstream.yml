@@ -6,6 +6,10 @@ on:
     # - cron: '0 2 * * *'
   workflow_dispatch: # Allows manual triggering
 
+permissions:
+  contents: write     # erlaubt Pushes
+  workflows: write    # erlaubt Änderungen an .github/workflows/*
+
 jobs:
   sync:
     runs-on: ubuntu-latest
